@@ -17,3 +17,10 @@ function deleteTown() {
 	else
 		$('#result').text(townName + " not found.");
 }
+
+function addTown() {
+    const townName = $('#townNameForAdd').val();
+    $('#townNameForAdd').val('');
+    $('#towns').append($('<option>').text(townName));
+    $('#result').text(`${townName} added.`);
+}
