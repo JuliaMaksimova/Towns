@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$('#btnDelete').click(deleteTown);
 	$('#btnAdd').click(addTown);
+	$('#btnShuffle').click(shuffleTowns);
 });
 
 function deleteTown() {
@@ -43,4 +44,5 @@ function shuffleArray(array) {
         [array[i], array[j]] = [array[j], array[i]];  // swap
     }
 }
+
 
