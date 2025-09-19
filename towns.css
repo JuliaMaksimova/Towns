@@ -1,3 +1,80 @@
-select, input {
-	width: 100px;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+/* General body styling */
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Include padding and border in element width calculations */
+* {
+    box-sizing: border-box;
+}
+
+/* Article container styling */
+article {
+    background: #CCC;
+    width: 180px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Header inside article */
+article > header {
+    background: #5F5F5F;
+    color: white;
+    margin: 0 0 10px 0;
+    padding: 4px 6px;
+}
+
+/* Optional: h1 inside article header */
+article > header > h1 {
+    margin: 0;
+}
+
+/* Select inside article */
+article > select {
+    width: 100%; /* full width of article minus padding */
+}
+
+/* Input inside article */
+article > input {
+    width: 100%;
+}
+
+/* Buttons inside article */
+article > button {
+    display: block;
+    margin: 10px auto 0 auto;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    background: green;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover effect for article buttons */
+article > button:hover {
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+
+/* Special styling for Delete button */
+button#btnDelete {
+    background: red;
+}
+
+/* Result message box */
+#result {
+    display: none;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px 15px;
+    background: #DDD;
+    border-radius: 5px;
+    border: 1px solid #777;
+    text-align: center;
 }
